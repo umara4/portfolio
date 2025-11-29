@@ -4,7 +4,7 @@ export const siteConfig = {
   description: "Portfolio website of Ali Umar",
   accentColor: "#1d4ed8",
   social: {
-    email: "aliumar1@outlook.com",
+    email: "ali_umar1@outlook.com",
     linkedin: "https://linkedin.com/in/yourprofile",
     twitter: "https://x.com/rfitzio",
     github: "https://github.com/RyanFitzgerald",
