@@ -96,7 +96,7 @@ export const educationData: BioDataType[] = [
     img: carnegieMellonLogo,
     title: "Carnegie Mellon University",
     specialty: "Master of Science in AI Engineering - Biomedical Engineering",
-    description: "Graduate student focused on artificial intelligence and biomedical engineering.",
+    description: " Graduate student focused on artificial intelligence and biomedical engineering.",
     fullInfo:
       "Master of Science in AI Engineering - Biomedical Engineering.<br />Expected December 2027.",
     dates: "Expected December 2027",
@@ -109,7 +109,7 @@ export const educationData: BioDataType[] = [
     title: "McMaster University",
     specialty: "Bachelor of Engineering in Mechatronics and Biomedical Engineering",
     description:
-      "Completed an engineering degree combining robotics, embedded systems, software, and biomedical applications.",
+      "Interdisciplinary engineering program combining biomedical systems, robotics and software development with a strong emphasis on applied design, computation and research driven problem solving",
     fullInfo:
       "Bachelor of Engineering in Mechatronics and Biomedical Engineering.<br />Graduated May 2026.",
     dates: "May 2026",
