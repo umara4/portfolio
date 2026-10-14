@@ -55,12 +55,26 @@ export const experienceData: BioDataType[] = [
     title: "McMaster University",
     specialty: "Research Assistant",
     description:
-      "Developed biosensing hardware and signal-processing pipelines for continuous aptamer sensing.",
+      "Undergraduate research focused on integrating biosensors with 3D bioprointed organ-on-a-chip platforms to enable real-time biological monitoering and data-driven analysis. ",
     fullInfo:
       "Developed biomedical sensing systems and analysis tooling.<ol><li>Integrated 16 PCB sensor chips with 64 electrodes and a Raspberry Pi through I2C, implementing signal amplification, filtering, and noise removal for real-time biomarker acquisition.</li><li>Developed a regression-based pipeline for 24-hour continuous aptamer sensing, standardizing feature extraction across partial and full scan intervals.</li><li>Overhauled legacy potentiostat code into a modular architecture, reducing setup time by 20% and supporting future project expansion.</li></ol>",
     dates: "September 2025 - May 2026",
     website: "https://www.mcmaster.ca/",
   },
+  {
+    id: "mcmaster-ecocar",
+    category: "experience",
+    img: mcmasterLogo,
+    title: "McMaster EcoCAR",
+    specialty: "Propulsion Controls and System Safety Team",
+    description:
+      "Contributed to the development of propulsion control systems and system safety analysis for a hybrid electric vehicle as part of a multidisplinary automotive engineering team.",
+    fullInfo:
+      "Developed biomedical sensing systems and analysis tooling.<ol><li>Integrated 16 PCB sensor chips with 64 electrodes and a Raspberry Pi through I2C, implementing signal amplification, filtering, and noise removal for real-time biomarker acquisition.</li><li>Developed a regression-based pipeline for 24-hour continuous aptamer sensing, standardizing feature extraction across partial and full scan intervals.</li><li>Overhauled legacy potentiostat code into a modular architecture, reducing setup time by 20% and supporting future project expansion.</li></ol>",
+    dates: "October 2022 - May 2026",
+    website: "https://www.macecocar.ca/",
+  },
+
   {
     id: "spartan-controls",
     category: "experience",
@@ -68,7 +82,7 @@ export const experienceData: BioDataType[] = [
     title: "Spartan Controls",
     specialty: "Automation Specialist Co-op",
     description:
-      "Designed and commissioned industrial control systems for real-time process monitoring.",
+      "Engineering co-op role focused on appluing autoamtion and control systems theory to real-world industrial processes, supporting desing, testing and troubleshooting activites in operational environments.",
     fullInfo:
       "Built and verified control systems for industrial process automation.<ol><li>Built and configured three DeltaV control panels with 12 CHARMs each, integrating 120 I/O points and 150 operator graphics.</li><li>Engineered control logic for a wastewater facility processing 100 million liters per day for 250,000 residents.</li><li>Commissioned a new waste-gas burner across four control loops.</li><li>Authored custom Python verification functions that reduced downstream validation errors and improved tool efficiency by 15%.</li></ol>",
     dates: "May 2024 - August 2025",
@@ -128,6 +142,17 @@ export const projectsData: BioDataType[] = [
     fullInfo:
       "A reconstruction pipeline for endoscopic video using COLMAP and Neural Radiance Fields.<ol><li>Improved surgical margin accuracy to 90% while minimizing resection risk.</li><li>Calibrated an IMU against checkerboard-based visual measurements for multisensory navigation within an 8 mm endoscope constraint.</li><li>Characterized accuracy with 3D-printed surgical cavity models, achieving less than 3 mm reconstruction error and within 1 mm reproducibility.</li></ol>",
     dates: "September 2025 - May 2026",
+  },
+  {
+    id: "arduino-car",
+    category: "projects",
+    img: mcmasterLogo,
+    title: "Autonomous Robotic Car",
+    specialty: "Personal Project",
+    description: "Embedded systems project involving the design and programming of an Arduino-based robotic vehicle capable of sensor-driven navigation and basic autonomous behaviour.",
+    fullInfo:
+      "A reconstruction pipeline for endoscopic video using COLMAP and Neural Radiance Fields.<ol><li>Improved surgical margin accuracy to 90% while minimizing resection risk.</li><li>Calibrated an IMU against checkerboard-based visual measurements for multisensory navigation within an 8 mm endoscope constraint.</li><li>Characterized accuracy with 3D-printed surgical cavity models, achieving less than 3 mm reconstruction error and within 1 mm reproducibility.</li></ol>",
+    dates: "May 2025 - August 2025",
   },
   {
     id: "rotator-cuff-rehab-system",
