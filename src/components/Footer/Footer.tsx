@@ -1,0 +1,97 @@
+import {
+  Footer as BarrelrollaFooter,
+  DarkModeSelector,
+  FooterDivider,
+  FooterIconsContainer,
+  FooterLink,
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "barrelrolla-ui";
+import { contacts } from "../../data/bio";
+import { Link, useLocation } from "react-router";
+import { PiCoffeeFill, PiHeartFill } from "react-icons/pi";
+import Anchor from "../ui/Anchor";
+
+export default function Footer() {
+  const year = new Date().getFullYear();
+  const path = useLocation().pathname;
+
+  const handleContactsClick = () => {
+    if (path === "/contacts") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  return (
+    <BarrelrollaFooter color="main" decorations>
+      <div className="flex w-full flex-wrap items-center justify-between pt-2">
+        <DarkModeSelector
+          lightModeAriaLabel="light"
+          lightModeTooltip="light"
+          darkModeAriaLabel="dark"
+          darkModeTooltip="dark"
+          systemModeAriaLabel="system"
+          systemModeTooltip="system"
+        />
+        <FooterIconsContainer>
+          {contacts.map((contact) => (
+            <Tooltip isLabel key={contact.title}>
+              <TooltipTrigger>
+                <FooterLink
+                  target="_blank"
+                  aria-label={`${contact.title} link`}
+                  href={contact.url}
+                >
+                  <contact.icon strokeWidth={10} />
+                </FooterLink>
+              </TooltipTrigger>
+              <TooltipContent>{contact.title}</TooltipContent>
+            </Tooltip>
+          ))}
+        </FooterIconsContainer>
+      </div>
+      <div className="flex w-full flex-col items-center text-center">
+        <p className="flex items-center gap-1">
+          Made with <PiHeartFill className="inline" /> and
+          <PiCoffeeFill className="inline" />
+        </p>
+        <p>
+          Icons by:{" "}
+          <Anchor href="https://phosphoricons.com/" target="_blank">
+            phosphoricons
+          </Anchor>
+        </p>
+        <p>© {year} Ali Umar. All rights reserved.</p>
+      </div>
+      <FooterDivider />
+      <div>
+        <h2 className="text-lg font-semibold">Privacy Policy</h2>
+        <p>This is a personal portfolio website hosted on Vercel.</p>
+      </div>
+      <ul>
+        <li>
+          <strong>Analytics:</strong> I use Vercel Web Analytics to track
+          aggregated, anonymous page views. It does not use cookies, does not
+          collect personal identifying information, and does not track you
+          across other websites.
+        </li>
+        <li>
+          <strong>Cookies:</strong> This site does not store tracking cookies on
+          your browser.
+        </li>
+        <li>
+          <strong>Contact:</strong> If you have any questions, you can reach out
+          at any of the listed{" "}
+          <Anchor as={Link} to={"/contacts"} onClick={handleContactsClick}>
+            contacts
+          </Anchor>
+          .
+        </li>
+      </ul>
+    </BarrelrollaFooter>
+  );
+}

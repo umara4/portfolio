@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+@plugin "barrelrolla-ui/plugin";
+@source "../node_modules/barrelrolla-ui/";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+  scrollbar-width: thin;
+}
+
+:root {
+  --color-main: #eef3ff;
+  --color-main-content: #172554;
+  --color-primary: #4169e1;
+  --color-primary-content: #ffffff;
+  --default-font-weight: 300;
+  --radius-navigation: 0;
+  --border-navigation: 1px;
+  scrollbar-gutter: stable;
+  --ring-offset: 8px;
+  --ring-blur: 20px;
+  --border-transparency: 0;
+}
+
+.dark {
+  --color-main: #173f78;
+  --color-main-content: #dceaff;
+  --color-primary: #9dbdf5;
+  --color-primary-content: #0b2343;
+  --color-neutral: #071a35;
+  --color-neutral-content: #dceaff;
+}
+
+@theme {
+  --font-sans: "Rubik", sans-serif;
+  --font-serif: "Cinzel", serif;
+}
+
+@media (width >=40rem) {
+  :root {
+    --ring-offset: 12px;
+    --ring-blur: 30px;
+  }
+}
+
+@media (width >=80rem) {
+  :root {
+    --ring-offset: 16px;
+    --ring-blur: 40px;
+  }
+}
+
+@utility animate-slow-spin {
+  overflow-anchor: none;
+  animation: slow-spin 8s linear infinite;
+}
+
+@keyframes slow-spin {
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@utility grid-left {
+  p {
+    text-align: end;
+  }
+}
+
+.height-hero {
+  @apply h-screen max-h-[1024px] min-h-[400px];
+}
+
+.hero-ring {
+  box-shadow:
+    var(--ring-offset) calc(var(--ring-offset) * -1) var(--ring-blur),
+    calc(var(--ring-offset) * -1) var(--ring-offset) var(--ring-blur);
+}
+
+.hero-text-shadow {
+  --blur: calc(var(--ring-blur) / 4);
+  text-shadow:
+    1px 1px var(--blur) var(--color-main),
+    -1px -1px var(--blur) var(--color-main),
+    -1px 1px var(--blur) var(--color-main),
+    1px -1px var(--blur) var(--color-main);
+}
+
+.bio-container {
+  @apply mt-6 flex flex-col items-end gap-6 md:items-stretch;
+}
+
+p > ol > li {
+  @apply my-4 list-inside list-disc;
+}
+
+.animate-fade-out {
+  animation: fade-out 300ms linear forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+    display: none;
+  }
+}
