@@ -34,7 +34,7 @@ export default function Hero() {
           transition={{ delay: 0.5 }}
           className="relative z-1 font-semibold sm:text-2xl xl:text-4xl"
         >
-          AI Engineer
+          Biomedical Engineer
         </motion.h2>
       </HeroSection>
       <MotionHeroSection
@@ -44,10 +44,10 @@ export default function Hero() {
         transition={{ delay: 0.7 }}
       >
         <p className="text-pretty">
-          AI Engineering graduate student with a background in biomedical
-          engineering, embedded systems, automation, and software research.
-          Focused on building reliable tools for sensing, signal processing,
-          computer vision, and real-world clinical applications.
+          I’m a biomedical engineer with experience across AI, biosensing,
+          computer vision, embedded systems, and automation. I build practical
+          systems that turn complex data into useful insights, from real-time
+          sensing to 3D reconstruction.
         </p>
         <HeroActions className="justify-around gap-2">
           <Button as={Link} to="/projects" className="w-[145px]">

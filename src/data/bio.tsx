@@ -99,7 +99,7 @@ export const experienceData: BioDataType[] = [
     fullInfo:
       "Conducted algorithmic research and developed reproducible benchmarking workflows.<ol><li>Analyzed KMP and Boyer-Moore pattern-matching algorithms in C using power-of-two and prime encoding schemes.</li><li>Architected a Python benchmarking framework for eight custom scripts across 1,000 automated test runs.</li><li>Refactored code and documented the repository to improve readability, then synthesized experimental metrics into technical reports and presentations.</li></ol>",
     dates: "May 2023 - May 2024",
-    website: "https://www.mcmaster.ca/",
+    website: "https://github.com/dehhganii/Practical_KMP_BM_Indet",
   },
 ];
 
@@ -142,17 +142,20 @@ export const projectsData: BioDataType[] = [
     fullInfo:
       "A reconstruction pipeline for endoscopic video using COLMAP and Neural Radiance Fields.<ol><li>Improved surgical margin accuracy to 90% while minimizing resection risk.</li><li>Calibrated an IMU against checkerboard-based visual measurements for multisensory navigation within an 8 mm endoscope constraint.</li><li>Characterized accuracy with 3D-printed surgical cavity models, achieving less than 3 mm reconstruction error and within 1 mm reproducibility.</li></ol>",
     dates: "September 2025 - May 2026",
+    github: "https://github.com/umara4/LeEndoscope",
   },
   {
-    id: "arduino-car",
+    id: "nhl-stats",
     category: "projects",
     img: mcmasterLogo,
-    title: "Autonomous Robotic Car",
+    title: "NHL Player Stats and Projection App",
     specialty: "Personal Project",
-    description: "Embedded systems project involving the design and programming of an Arduino-based robotic vehicle capable of sensor-driven navigation and basic autonomous behaviour.",
+    description:
+      "A Python application that combines NHL data, interactive dashboards, and contextual performance projections.",
     fullInfo:
-      "A reconstruction pipeline for endoscopic video using COLMAP and Neural Radiance Fields.<ol><li>Improved surgical margin accuracy to 90% while minimizing resection risk.</li><li>Calibrated an IMU against checkerboard-based visual measurements for multisensory navigation within an 8 mm endoscope constraint.</li><li>Characterized accuracy with 3D-printed surgical cavity models, achieving less than 3 mm reconstruction error and within 1 mm reproducibility.</li></ol>",
-    dates: "May 2025 - August 2025",
+      "Built a Python data and analytics application for NHL player performance.<ol><li>Integrated the NHL API into a data pipeline that populates a structured SQL database with player and team metrics.</li><li>Developed an interactive GUI with real-time data visualizations and performance dashboards.</li><li>Implemented dynamic queries and a predictive model to analyze player interactions and project performance using contextual factors such as linemate quality, time on ice (TOI), and power-play time.</li></ol>",
+    dates: "August 2025 - Present",
+    github: "https://github.com/umara4/NHL-stats",
   },
   {
     id: "rotator-cuff-rehab-system",
@@ -164,5 +167,18 @@ export const projectsData: BioDataType[] = [
     fullInfo:
       "A Bluetooth wearable and 3D visualization system for shoulder rehabilitation.<ol><li>Constructed an ESP32 and BNO055 wearable in a custom 3D-printed enclosure.</li><li>Filtered IMU noise to capture objective joint kinematics.</li><li>Built a real-time 3D interface comparing ideal and actual movement across joint angle, velocity, and acceleration, achieving 85% accuracy.</li><li>Stored session data for clinician review.</li></ol>",
     dates: "January 2024 - May 2024",
+    github: "https://github.com/farita1699/CuffCare"
+  },
+  
+  {
+    id: "arduino-car",
+    category: "projects",
+    img: mcmasterLogo,
+    title: "Autonomous Robotic Car",
+    specialty: "Personal Project",
+    description: "Embedded systems project involving the design and programming of an Arduino-based robotic vehicle capable of sensor-driven navigation and basic autonomous behaviour.",
+    fullInfo:
+      "A reconstruction pipeline for endoscopic video using COLMAP and Neural Radiance Fields.<ol><li>Improved surgical margin accuracy to 90% while minimizing resection risk.</li><li>Calibrated an IMU against checkerboard-based visual measurements for multisensory navigation within an 8 mm endoscope constraint.</li><li>Characterized accuracy with 3D-printed surgical cavity models, achieving less than 3 mm reconstruction error and within 1 mm reproducibility.</li></ol>",
+    dates: "December 2023 - January 2024",
   },
 ];
