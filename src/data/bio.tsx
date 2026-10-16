@@ -135,7 +135,7 @@ export const projectsData: BioDataType[] = [
   {
     id: "3d-surgical-reconstruction",
     category: "projects",
-    img: mcmasterLogo,
+    img: "/cuff.png",
     title: "3D Surgical Reconstruction from Endoscopic Video",
     specialty: "McMaster Capstone Project",
     description: "A computer-vision and neural-rendering pipeline for reconstructing surgical scenes from endoscopic video.",
@@ -147,20 +147,20 @@ export const projectsData: BioDataType[] = [
   {
     id: "nhl-stats",
     category: "projects",
-    img: mcmasterLogo,
+    img: "/NHL-Logo.png",
     title: "NHL Player Stats and Projection App",
     specialty: "Personal Project",
     description:
       "A Python application that combines NHL data, interactive dashboards, and contextual performance projections.",
     fullInfo:
       "Built a Python data and analytics application for NHL player performance.<ol><li>Integrated the NHL API into a data pipeline that populates a structured SQL database with player and team metrics.</li><li>Developed an interactive GUI with real-time data visualizations and performance dashboards.</li><li>Implemented dynamic queries and a predictive model to analyze player interactions and project performance using contextual factors such as linemate quality, time on ice (TOI), and power-play time.</li></ol>",
-    dates: "August 2025 - Present",
+    dates: "August 2025 - February 2026",
     github: "https://github.com/umara4/NHL-stats",
   },
   {
     id: "rotator-cuff-rehab-system",
     category: "projects",
-    img: mcmasterLogo,
+    img: "/Endoscopy.png",
     title: "Rotator Cuff Rehab System",
     specialty: "McMaster Course Project",
     description: "A Bluetooth wearable and real-time 3D interface for objective shoulder rehabilitation tracking.",
@@ -176,9 +176,10 @@ export const projectsData: BioDataType[] = [
     img: mcmasterLogo,
     title: "Autonomous Robotic Car",
     specialty: "Personal Project",
-    description: "Embedded systems project involving the design and programming of an Arduino-based robotic vehicle capable of sensor-driven navigation and basic autonomous behaviour.",
+    description:
+      "Designed and programmed an Arduino-powered robotic car to navigate autonomously using onboard sensors and embedded control logic.",
     fullInfo:
-      "A reconstruction pipeline for endoscopic video using COLMAP and Neural Radiance Fields.<ol><li>Improved surgical margin accuracy to 90% while minimizing resection risk.</li><li>Calibrated an IMU against checkerboard-based visual measurements for multisensory navigation within an 8 mm endoscope constraint.</li><li>Characterized accuracy with 3D-printed surgical cavity models, achieving less than 3 mm reconstruction error and within 1 mm reproducibility.</li></ol>",
+      "Designed and programmed an Arduino-powered robotic car for autonomous navigation.<ol><li>Integrated onboard sensors with embedded control logic to guide the car's movement.</li><li>Implemented basic autonomous behaviour, enabling the vehicle to respond to its surroundings without continuous manual control.</li></ol>",
     dates: "December 2023 - January 2024",
   },
 ];
