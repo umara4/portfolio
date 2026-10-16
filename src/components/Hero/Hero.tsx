@@ -45,9 +45,9 @@ export default function Hero() {
       >
         <p className="text-pretty">
           I’m a biomedical engineer with experience across AI, biosensing,
-          computer vision, embedded systems, and automation. I build practical
-          systems that turn complex data into useful insights, from real-time
-          sensing to 3D reconstruction.
+          computer vision, embedded systems, and automation. I want to work
+          on the medical devices that will make on impact on people, while
+          doing the best I can with what I got. 
         </p>
         <HeroActions className="justify-around gap-2">
           <Button as={Link} to="/projects" className="w-[145px]">
